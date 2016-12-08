@@ -1,0 +1,6 @@
+{
+	"name": "proplog/proplog",
+	"require": {
+		"doctrine/orm": "*"
+	}
+}
