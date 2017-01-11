@@ -16,7 +16,7 @@ function sja_debug( $item, $title = 'debug' ) {
 		var_dump( $item );
 		echo '</pre>';
 	} else {
-		echo '<pre>';
+		echo '<pre style="margin-left: 380px;margin-top:15px;background-color: white;padding:15px;">';
 		var_dump( $item );
 		echo '</pre>';
 	}

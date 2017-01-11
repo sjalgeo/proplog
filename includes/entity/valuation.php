@@ -3,15 +3,17 @@
 namespace PropLog\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\EntityRepository;
 
 /**
  * @Entity @Table(name="valuation")
- * @Entity(repositoryClass="FreshPress_Core\Repository\Product_Repository")
+ * @Entity(repositoryClass="PropLog\Repository\Valuation_Repository")
  **/
 class Valuation {
 	/**
 	 * @Id @Column(type="integer") @GeneratedValue
 	 * @var int
+	 *
 	 */
 	protected $id;
 
@@ -45,5 +47,13 @@ class Valuation {
 
 	public function set_property($property) {
 		$this->property = $property;
+	}
+
+	public function get_value() {
+		return $this->value;
+	}
+
+	public function get_created() {
+		return $this->created;
 	}
 }
